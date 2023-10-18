@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+@font-face {
+  font-family: "Snug Low";
+  src: url("/public/assets/fonts/snug/Snug-LowBl.eot");
+  src: url("/public/assets/fonts/snug/Snug-LowBl.eot?#iefix") format("embedded-opentype"),
+    url("/public/assets/fonts/snug/Snug-LowBl.woff2") format("woff2"),
+    url("/public/assets/fonts/snug/Snug-LowBl.woff") format("woff"),
+    url("/public/assets/fonts/snug/Snug-LowBl.ttf") format("truetype"),
+    url("/public/assets/fonts/snug/Snug-LowBl.svg#Snug-LowBl") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+  background-color: #e51c44;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: #e51c44 !important;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  background: #e51c44 !important;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  background: #e51c44 !important;
+}
+
+.btn-check:checked+.btn:focus-visible,
+.btn.active:focus-visible,
+.btn.show:focus-visible,
+.btn:first-child:active:focus-visible,
+:not(.btn-check)+.btn:active:focus-visible {
+  box-shadow: unset;
+}
+
+input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+}
+
+/* .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background: #000;
+  border-color: #000;
+} */
+.btn {
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.ws-normal {
+  white-space: normal !important;
+}
+
+.w-33 {
+  width: 33.3333%;
+}
+
+.profilePopup .btnWrp .btn.grey {
+  background: #939393;
+  border-color: #939393;
+  min-width: 100px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: unset !important;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+td,
+th {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+td {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+th.para {
+  min-width: 200px;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: 0 !important;
+}
+
+.successLabel {
+  background-color: rgba(36, 193, 143, 0.1) !important;
+  color: #24c18f;
+}
+
+.dangerLabel {
+  background-color: rgba(193, 36, 36, 0.1) !important;
+  color: #c12424;
+}
+
+table .tableButton {
+  border-radius: 4px;
+  background: #271f1f;
+  border-color: #271f1f;
+  font-family: "Snug Low";
+  padding: 0 20px;
+  height: 33px;
+}
+
+.form-control {
+  border-radius: 10px !important;
+  border: 1px solid #373131 !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1) !important;
+  height: 50px;
+}
+
+.input-group .input-group-text {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: 1px solid #373131;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: unset;
+  background: transparent;
+  z-index: 6;
+}
+
+textarea.form-control {
+  resize: none;
+  height: auto;
+}
+
+.Box {
+  background-color: #fffbf2 !important;
+}
+
+.box2 {
+  border-radius: 6px;
+  background: #fff5ee;
+}
+
+.cstmContentWrpper h6 {
+  font-family: "Snug Low";
+}
+
+section.AuthPage {
+  min-height: 100vh;
+}
+
+section.AuthPage .formInner {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "snug Low";
+}
+
+section.AuthPage .formInner label,
+.form-label,
+.AuthPops .top h4 {
+  font-family: "kalam";
+}
+
+.AuthPops .common-btn {
+  height: 40px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.common-btn.common-btn2 {
+  background: #e51c44;
+  border-color: #e51 C44;
+}
+
+.common-btn {
+  background: #ffa800;
+  border-color: #ffa800;
+  height: 50px;
+  border-radius: 6px;
+  transition: 0.4s;
+  font-family: "snug Low";
+  font-size: 18px;
+}
+
+.common-btn:hover {
+  background: #111 !important;
+  border-color: #111 !important;
+}
+
+section.AuthPage .formInner .link {
+  font-size: 16px;
+}
+
+section.AuthPage .formInner .link:hover {
+  color: #ffa800 !important;
+}
+
+.AuthPops .modal-content {
+  background: #fffbf2;
+  border-radius: 0;
+  border: 0;
+}
+
+.AuthPops .modal-dialog {
+  max-width: 835px;
+}
+
+.AuthPops input.form-control {
+  border: 0 !important;
+  box-shadow: unset !important;
+  border-bottom: 2px solid #000 !important;
+}
+
+main.Main {
+  width: calc(100% - 230px);
+  border-radius: 20px;
+  height: calc(100vh - 30px);
+  overflow-y: scroll;
+}
+
+main.Main::-webkit-scrollbar {
+  display: none;
+}
+
+div#root>section {
+  width: 100%;
+}
+
+div#root {
+  display: flex;
+  align-items: start;
+}
+
+.counterCards .CstmCard .imgWrp img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.counterCards .CstmCard .content p {
+  color: #241f20;
+  font-family: "kalam";
+  line-height: 16px;
+}
+
+.counterCards .CstmCard .content h6 {
+  font-family: "Snug Low";
+  color: #241f20;
+}
+
+.counterCards .CstmCard {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+div#root .Sidebar {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+div#root .Sidebar .linksWrp h6 {
+  font-weight: 700;
+  font-family: "kalam";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+div#root .Sidebar .linksUl a {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  font-family: "Snug Low";
+  font-size: 16px;
+}
+
+.contestPopup .modal-dialog {
+  max-width: 580px;
+}
+
+.contestPopup .petWrpper .content p {
+  color: #192a3e;
+  line-height: 20px;
+}
+
+.contestPopup .petWrpper .content h2 {
+  font-family: "Snug Low";
+  color: #192a3e;
+  font-size: 37px;
+}
+
+.cstmSwitch .react-switch-bg {
+  border: 1px solid #898988;
+}
+
+.cstmSwitch .react-switch-handle {
+  box-shadow: unset !important;
+}
+
+section.addContest label.form-label,
+section.addContest .common-btn {
+  font-family: "nunito";
+}
+
+section.addContest .common-btn {
+  font-size: 14px;
+  height: 45px;
+}
+
+.statusLabel.label2 {
+  background: #f6f2c5;
+  color: #192a3e;
+}
+
+.contestPopup .petWrpper .imgWrp img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.contestPopup .modal-content {
+  border-radius: 10px;
+}
+
+div#root .Sidebar .linksUl a.active {
+  background: #fff;
+  color: #241f20 !important;
+}
+
+div#root .Sidebar .linksUl a.active span.icn svg path {
+  fill: #241f20;
+}
+
+div#root .Sidebar .linksUl a.active span.icn.stroke svg path {
+  fill: unset;
+  stroke: #241f20;
+}
+
+header.header .welcome h4 {
+  color: #2e3a59;
+  font-family: "Kalam";
+  font-size: 23px;
+}
+
+header.header .welcome p {
+  color: #2e3a59;
+  font-size: 12px;
+}
+
+.theme-clr {
+  color: #e51c44 !important;
+}
+
+.theme-blue {
+  color: #2e3a59 !important;
+}
+
+.d-flex .imgWrp {
+  flex-shrink: 0;
+}
+
+.profile .imgWrp img {
+  aspect-ratio: 1/1;
+  border: 2px solid #ddd;
+}
+
+.profile .content h6 {
+  font-family: "Snug Low";
+  line-height: 20px;
+}
+
+.profile .content p {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.topHead h6 {
+  font-family: "Snug Low";
+  font-size: 23px;
+}
+
+.transparentTab .nav-link {
+  font-family: "Snug Low";
+  color: #7b859f;
+  font-size: 20px;
+}
+
+.transparentTab .nav-link.active {
+  color: #2e3a59;
+}
+
+.commonTable th {
+  color: #505470;
+  font-family: "Snug Low";
+}
+
+.commonTable thead {
+  border-radius: 8px;
+  border: 1px solid #eff0f4;
+  background: #fff5ee;
+}
+
+.profilePopup .modal-dialog {
+  max-width: 455px;
+}
+
+.profilePopup .top .profile h5 {
+  font-size: 14px;
+  color: #192a3e;
+}
+
+.profilePopup .listing span.text-muted {
+  width: 35%;
+}
+
+.profilePopup .listing span {
+  font-size: 12px;
+}
+
+.filterWrp h2 {
+  color: #241f20;
+  font-size: 30px;
+  font-family: "Snug Low";
+}
+
+.filterWrp h3 {
+  font-family: "Kalam";
+  font-size: 25px;
+  color: #241f20;
+}
+
+.filterWrp .form-control,
+.filterWrp .btn {
+  height: 50px;
+  min-width: 143px;
+  box-shadow: 0px 12px 24px rgba(0, 72, 217, 0.05) !important;
+  border: 1px solid #f2ecff !important;
+  font-size: 14px;
+  font-family: "kalam";
+  color: #9da3bb;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.filterWrp .form-control::placeholder {
+  color: #9da3bb;
+}
+
+div.filterWrp .searchForm input {
+  min-width: 250px;
+}
+
+.icon-with-text span.icn {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.paginationWrpper label.form-label {
+  color: #192a3e;
+}
+
+.paginationWrpper select.form-select {
+  max-width: max-content;
+  border-radius: 3px;
+  border: 1px solid #9f9898;
+  font-weight: 600;
+}
+
+.paginationWrpper select.form-select {
+  max-width: max-content;
+  border-radius: 3px;
+  border: 1px solid #9f9898;
+  font-weight: 600;
+}
+
+.paginationWrpper ul.pagination .page-link {
+  border: 0;
+  background: transparent;
+  font-family: "Snug Low";
+  color: #000;
+  border-radius: 3px;
+}
+
+.paginationWrpper ul.pagination .active .page-link {
+  background: #e8e8e8;
+}
+
+.commonTabs.nav .nav-link {
+  white-space: nowrap;
+  color: #505470;
+  font-family: "Snug Low";
+  font-size: 15px;
+  padding: 13px;
+}
+
+.commonTabs.nav .nav-link:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #505470;
+  opacity: 0;
+  z-index: 9;
+}
+
+.commonTabs.nav .nav-link.active:after {
+  opacity: 1;
+}
+
+.innerContentwrpper h6 {
+  color: #505470;
+  font-family: "Kalam";
+}
+
+.notLastBorder>*:not(:last-child) {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.AddSegmentPop .modal-dialog {
+  max-width: 1000px;
+}
+
+.AddSegmentPop .modal-content {
+  background: #241f20;
+  border-radius: 10px;
+}
+
+.AddSegmentPop .modalHeader h2 {
+  font-family: "Snug Low";
+  font-size: 30px;
+}
+
+.AddSegmentPop .modal-content .modalHeader {
+  border-bottom: 1px solid #686868;
+}
+
+.cardCstm.headTxt .top h5 {
+  font-family: "Snug Low";
+}
+
+.cardCstm.headTxt h6 {
+  font-family: "Kalam";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cardCstm.headTxt p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.UploadProfile.upload {
+  width: 150px;
+  height: 150px;
+}
+
+.ShowMutts__control {
+  height: 50px;
+  border: 1px solid #373131 !important;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.UploadProfile.upload span.icn {
+  height: 30px;
+  width: 30px;
+  background: #e51c44;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 0;
+}
+
+.UploadProfile.upload span.icn svg {
+  height: 50%;
+  width: 50%;
+}
+
+.upload input.position-absolute {
+  left: 0;
+  top: 0;
+  z-index: 9;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.chart-wrap .pieTitle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: -6px;
+  right: 6px;
+  fill: #ffa800;
+  width: 30px;
+  height: 30px;
+
+  transform: rotate(-19deg);
+}
+
+.editIcon path {
+  stroke: #fff;
+}
+
+.editIcon path:first-child,
+path:nth-child(3) {
+  stroke: #fff;
+  display: none;
+}
+
+.upload input.position-absolute {
+  z-index: 9;
+  cursor: pointer;
+  opacity: 0;
+}

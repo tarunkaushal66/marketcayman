@@ -1,0 +1,209 @@
+.gladYoureBack {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.loginText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.phoneNumber {
+  position: relative;
+}
+
+.username {
+  border-radius: var(--br-xs);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-base);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.closedEyeIcon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.password {
+  border-radius: var(--br-xs);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-base);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rememberMe {
+  position: relative;
+  font-weight: 500;
+}
+
+.passwordRem,
+.remember {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.remember {
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+}
+
+.passwordRem {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.login2 {
+  border-radius: var(--br-xs);
+  background: linear-gradient(89.96deg, #ffac27, #ffc108);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameGroup,
+.loginBtFp {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtFp {
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-family: var(--font-noto-sans);
+}
+
+.frameGroup {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+}
+
+.upperSection {
+  gap: var(--gap-xl);
+}
+
+.frameWrapper,
+.upperSection,
+.upperSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frameWrapper {
+  position: absolute;
+  top: 99px;
+  left: 40px;
+  align-items: center;
+}
+
+.dontHaveAn {
+  font-weight: 500;
+}
+
+.dontHaveAnAccountSignupWrapper {
+  position: absolute;
+  top: 734px;
+  left: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+}
+
+.frameParent,
+.loginChild {
+  position: absolute;
+  overflow: hidden;
+}
+
+.frameParent {
+  top: calc(50% - 398px);
+  right: 60px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(78, 78, 78, 0.2), rgba(78, 78, 78, 0.2)),
+    rgba(0, 0, 0, 0.14);
+  box-shadow: -8px 4px 5px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(53px);
+  width: 480px;
+  height: 796px;
+}
+
+.loginChild {
+  height: 34.95%;
+  width: 41.32%;
+  top: 45.06%;
+  right: 49.31%;
+  bottom: 20%;
+  left: 9.37%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.welcomeTo {
+  position: relative;
+  display: inline-block;
+  width: 675px;
+}
+
+.whatsappImage20230822At1 {
+  position: relative;
+  width: 441.89px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.welcomeToParent {
+  position: absolute;
+  top: 202px;
+  left: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 76px;
+  font-family: var(--font-inter);
+}
+
+.login {
+  position: relative;
+  background-color: var(--black);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: var(--color-white);
+  font-family: var(--font-noto-sans);
+}

@@ -1,0 +1,47 @@
+.loginBtFp {
+    align-items: center;
+    justify-content: center;
+    color: #0f0f0f;
+}
+
+.login1 {
+    border-radius: 12px;
+    background: linear-gradient(89.96deg, #ffac27, #ffc108);
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    padding: 14px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp {
+    position: relative;
+}
+
+.alreadyHaveAnAccountLogiWrapper {
+    position: absolute;
+    top: 795px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-family: Inter;
+}
+
+.alreadyHaveAn {
+    font-weight: 500;
+}
+
+.btnText {
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 18px;
+}

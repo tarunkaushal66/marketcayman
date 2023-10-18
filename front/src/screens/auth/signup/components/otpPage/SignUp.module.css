@@ -1,0 +1,229 @@
+.enterYourPhone {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.loginText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.phoneNumber {
+  position: relative;
+}
+
+.username {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.frameChild {
+  flex: 1;
+  position: relative;
+  border-radius: 10px;
+  background-color: #222;
+  height: 72px;
+}
+
+.rectangleParent {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.enterSixDigit {
+  position: relative;
+  line-height: 148.7%;
+  display: inline-block;
+  width: 395px;
+}
+
+.frameGroup,
+.usernameParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.frameGroup {
+  align-items: flex-end;
+  gap: 22px;
+  font-size: 14px;
+}
+
+.usernameParent {
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.login {
+  border-radius: 12px;
+  background: linear-gradient(89.96deg, #ffac27, #ffc108);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.credentials,
+.loginBtFp {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtFp {
+  align-items: center;
+  justify-content: center;
+  color: #0f0f0f;
+}
+
+.credentials {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+.upperSection {
+  gap: 20px;
+}
+
+.frameWrapper,
+.upperSection,
+.upperSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frameWrapper {
+  position: absolute;
+  top: 79px;
+  left: 40px;
+  align-items: center;
+}
+
+.alreadyHaveAn {
+  font-weight: 500;
+}
+
+.alreadyHaveAnAccountLogiWrapper {
+  position: absolute;
+  top: 795px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-family: Inter;
+}
+
+.frameParent {
+  position: absolute;
+  top: calc(50% - 418px);
+  right: 60px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(78, 78, 78, 0.2), rgba(78, 78, 78, 0.2)),
+    rgba(0, 0, 0, 0.14);
+  box-shadow: -8px 4px 5px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(53px);
+  width: 480px;
+  height: 857px;
+  overflow: hidden;
+}
+
+.signUpChild,
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  height: 0.54%;
+  width: 0.39%;
+  top: 12.68%;
+  right: 65.96%;
+  bottom: 86.77%;
+  left: 33.65%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.signUpChild,
+.vectorIcon1,
+.vectorIcon2 {
+  right: 66.92%;
+  left: 32.7%;
+}
+
+.signUpChild,
+.vectorIcon2 {
+  right: 67.87%;
+  left: 31.74%;
+}
+
+.signUpChild {
+  height: 34.95%;
+  width: 41.32%;
+  top: 45.06%;
+  right: 49.31%;
+  bottom: 20%;
+  left: 9.37%;
+}
+
+.welcomeTo {
+  position: relative;
+  display: inline-block;
+  width: 675px;
+}
+
+.whatsappImage20230822At1 {
+  position: relative;
+  width: 441.89px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.welcomeToParent {
+  position: absolute;
+  top: 202px;
+  left: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 76px;
+  font-family: Inter;
+}
+
+.signUp {
+  position: relative;
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: var(--primary-text-color);
+  font-family: "Noto Sans";
+}

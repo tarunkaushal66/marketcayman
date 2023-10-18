@@ -1,0 +1,244 @@
+.loginChild,
+.loginItem {
+  position: absolute;
+  border-radius: 50%;
+  display: none;
+}
+
+.loginChild {
+  top: 59px;
+  left: 829px;
+  background: linear-gradient(160.57deg,
+      rgba(248, 161, 23, 0.8),
+      rgba(255, 207, 78, 0.8));
+  width: 266px;
+  height: 266px;
+}
+
+.loginItem {
+  top: 840.97px;
+  left: 1157px;
+  background: linear-gradient(176.16deg, #ffcf4e, #f8a117);
+  width: 220px;
+  height: 220px;
+  transform: rotate(-28.5deg);
+  transform-origin: 0 0;
+}
+
+.signUp {
+  position: relative;
+}
+
+.enterYourCredentials {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.loginText,
+.username {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.loginText {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.username {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 400px;
+  flex-direction: row;
+  padding: 14px 16px;
+  align-items: center;
+}
+
+.closedEyeIcon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.password {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.usernameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.login1 {
+  border-radius: 12px;
+  background: linear-gradient(89.96deg, #ffac27, #ffc108);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.credentials,
+.loginBtFp {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtFp {
+  align-items: center;
+  justify-content: center;
+  color: #0f0f0f;
+}
+
+.credentials {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+.upperSection {
+  gap: 20px;
+}
+
+.frameWrapper,
+.upperSection,
+.upperSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frameWrapper {
+  position: absolute;
+  top: 79px;
+  left: 40px;
+  align-items: center;
+}
+
+.alreadyHaveAn {
+  font-weight: 500;
+}
+
+.alreadyHaveAnAccountLogiWrapper {
+  position: absolute;
+  top: 795px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-family: Inter;
+}
+
+.frameParent {
+  position: absolute;
+  top: calc(50% - 418px);
+  right: 60px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(78, 78, 78, 0.2), rgba(78, 78, 78, 0.2)),
+    rgba(0, 0, 0, 0.14);
+  box-shadow: -8px 4px 5px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(53px);
+  width: 480px;
+  height: 857px;
+  overflow: hidden;
+}
+
+.loginInner,
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  height: 0.54%;
+  width: 0.39%;
+  top: 12.68%;
+  right: 65.96%;
+  bottom: 86.77%;
+  left: 33.65%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.loginInner,
+.vectorIcon1,
+.vectorIcon2 {
+  right: 66.92%;
+  left: 32.7%;
+}
+
+.loginInner,
+.vectorIcon2 {
+  right: 67.87%;
+  left: 31.74%;
+}
+
+.loginInner {
+  height: 34.95%;
+  width: 41.32%;
+  top: 45.06%;
+  right: 49.24%;
+  bottom: 20%;
+  left: 9.44%;
+}
+
+.welcomeTo {
+  position: relative;
+  display: inline-block;
+  width: 675px;
+}
+
+.whatsappImage20230822At1 {
+  position: relative;
+  width: 441.89px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.welcomeToParent {
+  position: absolute;
+  top: 202px;
+  left: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 76px;
+  font-family: Inter;
+}
+
+.login {
+  position: relative;
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: var(--primary-text-color);
+  font-family: "Noto Sans";
+}

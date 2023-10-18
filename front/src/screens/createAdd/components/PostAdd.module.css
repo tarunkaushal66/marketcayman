@@ -1,0 +1,109 @@
+.postAdd {
+  position: relative;
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 1668px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 30px;
+  color: var(--primary-text-color);
+  font-family: Inter;
+}
+
+.postAddChild {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 455px);
+  border-radius: 12px;
+  background-color: var(--secondary-background-color);
+  width: 910px;
+  height: 1015px;
+}
+
+.createYourAd {
+  position: absolute;
+  top: 186px;
+  left: 571px;
+  line-height: 165.52%;
+}
+
+
+.passwordParent,
+.pleaseSelectACategoryParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.passwordParent {
+  align-self: stretch;
+  gap: 26px;
+  font-size: 20px;
+}
+
+.pleaseSelectACategoryParent {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 806px;
+  gap: 28px;
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+}
+
+.pleaseSelectA {
+  position: relative;
+  line-height: 165.52%;
+  font-weight: 600;
+}
+
+.password {
+  cursor: pointer;
+}
+
+.password,
+.password1 {
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 22px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.iconbuilding {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.iconbuilding,
+.vehicles {
+  position: relative;
+}
+
+.iconbuildingParent {
+  width: 746px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.item {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 8px;
+  padding: 16px 8px;
+  margin-block: 16px;
+}
+
+.changeCategory {
+  color: var(--main-theme-color)
+}

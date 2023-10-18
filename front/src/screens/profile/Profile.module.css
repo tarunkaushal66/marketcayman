@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-background-color);
+    padding: 6%;
+    margin: 6% auto;
+    border-radius: 8px;
+}
+
+.main {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profileImageEditIconWrapper {
+    position: absolute;
+    right: 4%;
+    bottom: 6%;
+    background-color: var(--main-theme-color);
+    border-radius: 50%;
+    width: 16%;
+    height: 16%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listItem {
+    border-bottom: 1px solid var(--secondary-text-color);
+    padding-block: 16px;
+}

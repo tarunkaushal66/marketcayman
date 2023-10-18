@@ -1,0 +1,57 @@
+@media (max-width: 992px) {
+  div#root .Sidebar {
+    position: fixed !important;
+    z-index: 99;
+    background: #e51c44;
+    height: 100vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.4s;
+  }
+
+  div#root .Sidebar:not(.active) {
+    transform: translateX(-100%);
+  }
+
+  header.header .logo {
+    max-width: max-content;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  header.header .logo {
+    object-fit: contain;
+  }
+
+  main.Main {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 !important;
+    height: 100vh;
+    padding: 0 !important;
+  }
+
+  .orderReverse>div:last-child {
+    order: -1;
+  }
+}
+
+@media (max-width: 575px) {
+  .profile .content * {
+    font-size: 0 !important;
+  }
+
+  header.header .right svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .profile .imgWrp img {
+    height: 35px !important;
+  }
+
+  header.header .profile {
+    gap: 0;
+  }
+}

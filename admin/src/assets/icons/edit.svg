@@ -1,0 +1,35 @@
+  <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                            >
+                              <g clipPath="url(#clip0_0_2733)">
+                                <path
+                                  d="M6.71048 0.955078H5.39469C2.10522 0.955078 0.789429 2.27087 0.789429 5.56035V9.50771C0.789429 12.7972 2.10522 14.1129 5.39469 14.1129H9.34203C12.6315 14.1129 13.9474 12.7972 13.9474 9.50771V8.19189"
+                                  stroke="black"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                                <path
+                                  d="M10.0264 1.62589L4.84216 6.81009C4.64479 7.00746 4.44743 7.39562 4.40795 7.67851L4.12505 9.65881C4.01979 10.3759 4.52638 10.8759 5.24348 10.7772L7.22374 10.4943C7.50005 10.4548 7.88822 10.2575 8.09219 10.0601L13.2763 4.87588C14.1711 3.98115 14.5922 2.94167 13.2763 1.62589C11.9606 0.310096 10.9211 0.731148 10.0264 1.62589Z"
+                                  stroke="black"
+                                  strokeMiterlimit="10"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                                <path
+                                  d="M9.28284 2.36914C9.7236 3.9415 10.9539 5.17177 12.5329 5.61914"
+                                  stroke="black"
+                                  strokeMiterlimit="10"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_0_2733">
+                                  <rect width="15" height="15" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
