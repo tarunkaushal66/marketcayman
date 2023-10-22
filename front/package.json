@@ -15,6 +15,7 @@
     "bootstrap": "^5.3.1",
     "firebase": "^10.4.0",
     "formik": "^2.4.4",
+    "hyphen": "^1.7.0",
     "otp-input-react": "^0.3.0",
     "phone": "^3.1.40",
     "react": "^18.2.0",

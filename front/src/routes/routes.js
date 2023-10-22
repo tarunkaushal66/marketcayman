@@ -50,7 +50,7 @@ export const routes = [
     ),
   },
   {
-    path: "/createPost/addpostdetails/:categoryName",
+    path: "/createPost/addpostdetails/:categoryName/:SubCategoryId",
     element: (
       <MainLayout>
         <PostDetails />

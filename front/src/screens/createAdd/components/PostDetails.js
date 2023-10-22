@@ -9,11 +9,10 @@ import { getProductFormFields } from "../../../redux/adds/thunk";
 import { toast } from "react-toastify";
 
 export default function PostDetails() {
-  const { categoryName } = useParams();
+  const { categoryName, SubCategoryId } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { productFormFields } = useSelector((state) => state.ads);
-  const [formFields, setFormFields] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,34 +33,9 @@ export default function PostDetails() {
     fetchProductDetails();
   }, []);
 
-  let newFormFields = {};
-  const getProductFields = (data) => {
-    Object.entries(data[1]).map((field) => {
-      if (typeof field[1] === "object") {
-        getProductFields(field);
-      } else {
-        newFormFields = {
-          ...newFormFields,
-          [data[0]]: newFormFields[data[0]]
-            ? [...newFormFields[data[0]], { Label: field[0], type: field[1] }]
-            : [{ Label: field[0], type: field[1] }],
-        };
-      }
-    });
-    setFormFields((prev) => {
-      return { ...prev, ...newFormFields };
-    });
-  };
-
-  useEffect(() => {
-    if (productFormFields.data) {
-      getProductFields(["Specification", productFormFields.data]);
-    }
-  }, [productFormFields]);
-
   console.log("productFormFields", productFormFields);
-  console.log("categoryName", categoryName);
-  console.log("formFields", formFields);
+  // console.log("categoryName", categoryName);
+  // console.log("formFields", formFields);
 
   return (
     <div className="d-flex justify-content-center">
@@ -83,114 +57,37 @@ export default function PostDetails() {
                 </p>
 
                 <Form onSubmit={handleSubmit} className="mt-5">
-                  {formFields.Specification &&
-                    Object.entries(formFields).map((formGroup) => (
-                      <>
-                        <h6>{formGroup[0]}</h6>
-                        {formGroup[1].map(
-                          (field) =>
-                            ["Number", "String", "ObjectID"].includes(
-                              field.type
-                            ) && (
-                              <input
-                                type="text"
-                                placeholder="Title"
-                                className="inputField"
-                              />
-                            )
-                        )}
-                      </>
-                    ))}
+                  {productFormFields.data?.data?.length > 0 &&
+                    productFormFields.data?.data?.map((field) =>
+                      Object.keys(field).includes("nested") ? (
+                        <>
+                          <h5>{field.label}</h5>
+                          {["Number", "String", "ObjectID"].includes(
+                            field.type
+                          ) && (
+                            <input
+                              type="text"
+                              placeholder="Title"
+                              className="inputField"
+                            />
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <p className="mb-1">{field.label}</p>
+                          {["Number", "String", "ObjectID"].includes(
+                            field.type
+                          ) && (
+                            <input
+                              type={field.type === "Number" ? "number" : "text"}
+                              placeholder={field.placeHolder}
+                              className="inputField"
+                            />
+                          )}
+                        </>
+                      )
+                    )}
 
-                  <div className="d-flex justify-content-start">
-                    <input type="checkbox" placeholder="" className="mx-2" />
-                    <span>Price is negotiable</span>
-                  </div>
-                  <SelectBox
-                    options={[
-                      { label: "YES", value: "yes" },
-                      { label: "NO", value: "no" },
-                    ]}
-                    placeholder={"used"}
-                  />
-
-                  <input
-                    type="date"
-                    placeholder="Expiry Date"
-                    className="inputField"
-                  />
-                  <h6>Add More Information</h6>
-                  <textarea
-                    placeholder="Write a Description"
-                    className="inputField"
-                  />
-
-                  <h6>Add Details</h6>
-                  <input
-                    type="text"
-                    placeholder="Landmark"
-                    className="inputField"
-                  />
-                  <div className="d-block d-md-flex justify-content-between gap-3">
-                    <SelectBox
-                      options={[
-                        { label: "1", value: "1" },
-                        { label: "2", value: "2" },
-                        { label: "3", value: "3" },
-                        { label: "4", value: "4" },
-                      ]}
-                      placeholder={"No. of Bathrooms"}
-                      style={{
-                        container: (baseSyles) => ({
-                          ...baseSyles,
-                          width: "100%",
-                        }),
-                      }}
-                    />
-                    <SelectBox
-                      options={[
-                        { label: "1", value: "1" },
-                        { label: "2", value: "2" },
-                        { label: "3", value: "3" },
-                        { label: "4", value: "4" },
-                      ]}
-                      placeholder={"No. of Bedrooms"}
-                      style={{
-                        container: (baseSyles) => ({
-                          ...baseSyles,
-                          width: "100%",
-                        }),
-                      }}
-                    />
-                  </div>
-                  <div className="d-block d-md-flex justify-content-between gap-3">
-                    <SelectBox
-                      options={[
-                        { label: "YES", value: "yes" },
-                        { label: "NO", value: "no" },
-                      ]}
-                      placeholder={"Living Rooms"}
-                      style={{
-                        container: (baseSyles) => ({
-                          ...baseSyles,
-                          width: "100%",
-                        }),
-                      }}
-                    />
-                    <SelectBox
-                      options={[
-                        { label: "YES", value: "yes" },
-                        { label: "NO", value: "no" },
-                      ]}
-                      placeholder={"Type"}
-                      style={{
-                        container: (baseSyles) => ({
-                          ...baseSyles,
-                          width: "100%",
-                        }),
-                      }}
-                    />
-                  </div>
                   <div className="centerAlignBtn">
                     <button type="submit" className="primaryBtn px-5">
                       Post job

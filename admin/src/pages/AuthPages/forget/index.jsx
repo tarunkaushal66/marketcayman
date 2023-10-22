@@ -71,8 +71,8 @@ const ForgotPop = ({ showForgetState }) => {
                     <div className="py-2 top">
                       <h4 className="fw-bold m-0">Forgot Password</h4>
                       <p className="py-2">
-                        If you have an show us ur mutts account, you will
-                        receive a password reset link to this e-mail.
+                        If you have an market-cayman account, you will receive a
+                        password reset link to this e-mail.
                       </p>
                     </div>
                     <div className="py-2">

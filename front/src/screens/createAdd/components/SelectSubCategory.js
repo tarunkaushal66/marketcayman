@@ -45,7 +45,7 @@ export default function SelectSubCategory() {
                     key={item._id}
                     onClick={() => {
                       navigate(
-                        `/createPost/addpostdetails/${subCategories.data?.categoryName}`
+                        `/createPost/addpostdetails/${subCategories.data?.categoryName}/${item._id}`
                       );
                     }}
                     className={` ${styles2.item} pointer d-flex justify-content-between align-items-center`}
