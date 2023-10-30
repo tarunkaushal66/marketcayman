@@ -480,3 +480,12 @@ h2.accordion-header button svg {
   display: flex;
   align-items: center;
 }
+
+.actionDropdown {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}

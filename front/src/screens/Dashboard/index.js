@@ -1,14 +1,11 @@
 import React from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Col, Dropdown, Form, Row } from "react-bootstrap";
 import Pode from "../../images/pode.png";
 import Sale from "../../images/sale.png";
 import SelectBox from "../../components/common/selectBox";
 import { ReactComponent as ThreeDots } from "../../assets/icons/threeDots.svg";
 
 export default function Dashboard() {
-  const navigate = useNavigate();
-
   return (
     <>
       <Col xs={11} lg={10} xl={9} className="mx-auto">
@@ -93,7 +90,18 @@ export default function Dashboard() {
               <div className="d-flex align-items-center justify-content-between px-2">
                 <p className={`mb-0 postStatus`}>Active</p>
                 <div className="">
-                  <ThreeDots style={{ width: 22, height: 22 }} />
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      className="actionDropdown"
+                      id="dropdown-custom-components"
+                    >
+                      <ThreeDots style={{ width: 22, height: 22 }} />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item>Delete</Dropdown.Item>
+                      <Dropdown.Item>Promote</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </div>
               </div>
               <img src={Pode} className="d-flex mx-auto p-2 w-100" alt="" />

@@ -1,8 +1,6 @@
 import Products from "../screens/Product";
 import Login from "../screens/auth/login";
 import SignUp from "../screens/auth/signup";
-import CreateAdd from "../screens/createAdd";
-import Dashboard from "../screens/Dashboard";
 import Home from "../screens/home";
 import MainLayout from "../layout/MainLayout";
 import Profile from "../screens/profile";
@@ -15,6 +13,7 @@ import PromoteAdd from "../screens/createAdd/components/PromoteAdd";
 import SelectCategory from "../screens/createAdd/components/SelectCategory";
 import SelectSubCategory from "../screens/createAdd/components/SelectSubCategory";
 import PostDetails from "../screens/createAdd/components/PostDetails";
+import Dashboard from "../screens/dashboard";
 
 export const routes = [
   {
