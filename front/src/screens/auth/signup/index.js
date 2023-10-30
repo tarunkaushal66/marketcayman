@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import MobilePage from "./components/mobilePage";
 import OtpPage from "./components/otpPage";
@@ -32,6 +32,8 @@ const SignUp = () => {
           size: "invisible",
           callback: (response) => {
             console.log("reCAPTCHA solved response", response);
+            // console.log("window.recaptchaVerifier", window.recaptchaVerifier);
+
             // onSignup();
             // reCAPTCHA solved, allow signInWithPhoneNumber.
           },
@@ -40,10 +42,11 @@ const SignUp = () => {
             // Response expired. Ask user to solve reCAPTCHA again.
             // ...
           },
-        },
-        auth
+        }
       );
-      window.recaptchaVerifier.render();
+      window.recaptchaVerifier.render().then((widgetId) => {
+        window.recaptchaWidgetId = widgetId;
+      });
     }
   }
 
@@ -51,18 +54,11 @@ const SignUp = () => {
     setLoading(true);
     const captchaResponse = await onCaptchaVerify();
     const appVerifier = window.recaptchaVerifier;
-    // console.log("captchaResponse", captchaResponse);
-    // console.log("auth", auth);
-    // console.log("appVerifier", appVerifier);
-
-    auth.settings.appVerificationDisabledForTesting = true;
 
     const phoneNumber = `+${values.phoneNumber}`;
 
     await signInWithPhoneNumber(auth, phoneNumber, appVerifier)
       .then((confirmationResult) => {
-        // SMS sent. Prompt user to type the code from the message, then sign the
-        // user in with confirmationResult.confirm(code).
         // console.log("confirmationResult", confirmationResult);
 
         window.confirmationResult = confirmationResult;
@@ -73,6 +69,10 @@ const SignUp = () => {
         console.log("firebase error", error);
         if (error.message === "Firebase: Error (auth/too-many-requests).") {
           toast.error("Too many request please try after sometime");
+        } else if (
+          "Firebase: Hostname match not found (auth/captcha-check-failed)."
+        ) {
+          toast.error("Please contact developer");
         } else {
           toast.error(error.message);
         }
@@ -129,12 +129,10 @@ const SignUp = () => {
     }
   };
 
-  console.log("loading", loading);
-
   return (
     <>
       {loading && <LoadIndicator forceLoader={true} />}
-      <div id="recaptcha-container" />
+
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}

@@ -43,6 +43,15 @@ export const getProductFormFields = createAsyncThunk(
   }
 );
 
+export const createAdd = createAsyncThunk("ads/create", async (add, Thunk) => {
+  try {
+    const response = await axios.post(`user/ads/create`, add);
+    return response.data;
+  } catch (err) {
+    return Thunk.rejectWithValue(err);
+  }
+});
+
 export const getAllAdds = createAsyncThunk("ads/all", async (user, Thunk) => {
   try {
     const response = await axios.post("user/ads/all");

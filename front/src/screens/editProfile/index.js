@@ -27,7 +27,7 @@ export default function EditProfile() {
       delete request._id;
 
       const response = await dispatch(updateUserProfile(request)).unwrap();
-      console.log("first", response);
+      // console.log("response", response);
     } catch (error) {
       console.log("error", error);
       toast.error(error.message);

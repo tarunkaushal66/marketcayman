@@ -99,7 +99,7 @@ export default function Profile() {
   }, [profileImage]);
 
   // console.log("pathName", pathname);
-  console.log("userProfile", userProfile);
+  // console.log("userProfile", userProfile);
   // console.log("profileImage", profileImage);
 
   return (
