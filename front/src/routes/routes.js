@@ -13,7 +13,7 @@ import PromoteAdd from "../screens/createAdd/components/PromoteAdd";
 import SelectCategory from "../screens/createAdd/components/SelectCategory";
 import SelectSubCategory from "../screens/createAdd/components/SelectSubCategory";
 import PostDetails from "../screens/createAdd/components/PostDetails";
-import Dashboard from "../screens/dashboard";
+import Dashboard from "../screens/Dashboard";
 
 export const routes = [
   {
